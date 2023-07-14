@@ -1,0 +1,141 @@
+:root {
+    --theme-background-color: #007bff;
+    --theme-background-color-hover: #3b9aff;
+    --theme-background-color-active: #005bbc;
+    --theme-border-color: #b5b5b5;
+    --theme-text-white-color: #0c0c0c;
+    --theme-border-radius: 5px;
+}
+
+body {
+    margin: 0;
+}
+
+.vari-button {
+    background-color: #ffffff;
+    color: var(--theme-text-white-color);
+    padding: 5px 10px;
+    border-radius: var(--theme-border-radius);
+    border: solid 0.5px var(--theme-border-color);
+    transition: all 0.25s;
+    cursor: pointer;
+    user-select: none;
+}
+
+.vari-button.vari-primary {
+    padding: 5.8px 11px;
+    color: #ffffff;
+    background-color: var(--theme-background-color);
+    border: none;
+}
+
+.vari-button.vari-dashed {
+    padding: 5px 10px;
+    color: var(--theme-text-white-color);
+    background-color: #ffffff;
+    border-style: dashed;
+    border-width: 1.5px;
+}
+
+.vari-button.vari-text {
+    padding: 5.8px 11px;
+    color: var(--theme-text-white-color);
+    border: none;
+    background: none;
+}
+
+.vari-button.vari-link {
+    padding: 5.8px 11px;
+    color: var(--theme-background-color);
+    background: none;
+    border: none;
+}
+
+.vari-button:hover {
+    border-color: var(--theme-background-color);
+    color: var(--theme-background-color);
+}
+
+.vari-button:active {
+    border-color: var(--theme-background-color-active);
+    color: var(--theme-background-color-active);
+}
+
+.vari-button.vari-primary:hover {
+    background: var(--theme-background-color-hover);
+    color: #ffffff;
+}
+
+.vari-button.vari-primary:active {
+    background: var(--theme-background-color-active);
+}
+
+.vari-button.vari-text:hover {
+    background-color: rgba(207, 207, 207, 0.4);
+    color: var(--theme-text-white-color);
+}
+
+.vari-button.vari-text:active {
+    background-color: rgba(207, 207, 207, 0.650);
+    color: var(--theme-text-white-color);
+}
+
+.vari-button.vari-link:hover {
+    color: var(--theme-background-color-hover);
+}
+
+.vari-button.vari-link:active {
+    color: var(--theme-background-color-active);
+}
+
+.vari-content {
+    width: calc(100% - 100px);
+    padding: 15px 50px;
+}
+
+.vari-content.vari-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vari-divider {
+    width: 100%;
+    height: 0;
+    border: solid 0.05px var(--theme-border-color);
+    margin: 15px 0;
+}
+
+.vari-dashed {
+    border-style: dashed;
+}
+
+.vari-breadcrumb vari-breadcrumb-prompt {
+    color: var(--theme-text-white-color);
+    border-radius: var(--theme-border-radius);
+    transition: all 0.25s;
+    padding: 5px 0 5px 5px;
+}
+
+.vari-breadcrumb vari-breadcrumb-prompt::after {
+    content: "\\";
+    margin: 0 0 0 8px;
+    color: var(--theme-text-white-color);
+}
+
+.vari-breadcrumb vari-breadcrumb-prompt:hover {
+    background-color: rgba(207, 207, 207, 0.4);
+}
+
+.vari-breadcrumb vari-breadcrumb-prompt:active {
+    background-color: rgba(207, 207, 207, 0.650);
+}
+
+.vari-menu {
+    height: 70px;
+    width: 100%;
+}
+
+.vari-menu .vari-title {
+
+}
