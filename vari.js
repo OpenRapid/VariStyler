@@ -1,4 +1,4 @@
-// document.head.innerHTML += `<link rel="stylesheet" href="templates/system/index.css">`
+document.head.innerHTML += `<script src="/VariStyler/jquery.min.js">`
 document.head.innerHTML += `<link rel="stylesheet" href="VariStyler/templates/system/index.css">`
 
 const xhr = new XMLHttpRequest();
@@ -11,5 +11,5 @@ xhr.onreadystatechange = () => {
     }
 }
 };
-xhr.open('GET', 'config.json', true);
+xhr.open('GET', '/VariStyler/config.json', true);
 xhr.send(null);
