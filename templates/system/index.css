@@ -131,6 +131,14 @@ body {
     background-color: rgba(207, 207, 207, 0.650);
 }
 
+
+/* 1.0.1新功能：自定义Vari文件夹 */
+#vari-main-folder {
+    width: 0;
+    height: 0;
+    display: none;
+}
+
 /* .vari-menu {
     height: 70px;
     width: 100%;
