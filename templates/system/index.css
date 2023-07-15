@@ -110,24 +110,24 @@ body {
     border-style: dashed;
 }
 
-.vari-breadcrumb vari-breadcrumb-prompt {
+.vari-breadcrumb .vari-breadcrumb-prompt {
     color: var(--theme-text-white-color);
     border-radius: var(--theme-border-radius);
     transition: all 0.25s;
     padding: 5px 0 5px 5px;
 }
 
-.vari-breadcrumb vari-breadcrumb-prompt::after {
+.vari-breadcrumb .vari-breadcrumb-prompt::after {
     content: "\\";
     margin: 0 0 0 8px;
     color: var(--theme-text-white-color);
 }
 
-.vari-breadcrumb vari-breadcrumb-prompt:hover {
+.vari-breadcrumb .vari-breadcrumb-prompt:hover {
     background-color: rgba(207, 207, 207, 0.4);
 }
 
-.vari-breadcrumb vari-breadcrumb-prompt:active {
+.vari-breadcrumb .vari-breadcrumb-prompt:active {
     background-color: rgba(207, 207, 207, 0.650);
 }
 
