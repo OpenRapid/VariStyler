@@ -1,5 +1,5 @@
 document.head.innerHTML += `<script src="/VariStyler/jquery.min.js">`
-document.head.innerHTML += `<link rel="stylesheet" href="VariStyler/templates/system/index.css">`
+document.head.innerHTML += `<link rel="stylesheet" href="/VariStyler/templates/system/index.css">`
 
 const xhr = new XMLHttpRequest();
 xhr.onreadystatechange = () => {
@@ -7,7 +7,7 @@ xhr.onreadystatechange = () => {
    if ((xhr.status >= 200 && xhr.status < 300) || xhr.status === 304) {
     var a = JSON.parse(xhr.responseText);
     if (a["template"] !== "system"){
-        document.head.innerHTML += `<link rel="stylesheet" href="${"templates/" + a["template"] + "/index.css"}">`
+        document.head.innerHTML += `<link rel="stylesheet" href="/VariStyler/${"templates/" + a["template"] + "/index.css"}">`
     }
 }
 };
