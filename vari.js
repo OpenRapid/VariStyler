@@ -10,8 +10,8 @@ if (document.getElementById("vari-main-folder")){
 }
 
 // 添加主要库
-document.head.innerHTML += `<script src="/VariStyler/jquery.min.js">`
-document.head.innerHTML += `<link rel="stylesheet" href="/VariStyler/templates/system/index.css">`
+document.head.innerHTML += `<script src="${vari_main_folder}/jquery.min.js">`
+document.head.innerHTML += `<link rel="stylesheet" href="${vari_main_folder}/templates/system/index.css">`
 
 // 获取config.json
 const xhr = new XMLHttpRequest();
@@ -21,10 +21,10 @@ xhr.onreadystatechange = () => {
     var a = JSON.parse(xhr.responseText);
     // 如果用户选择了默认主题就跳过设置
     if (a["template"] !== "system"){
-        document.head.innerHTML += `<link rel="stylesheet" href="/VariStyler/${"templates/" + a["template"] + "/index.css"}">`
+        document.head.innerHTML += `<link rel="stylesheet" href="${vari_main_folder}/${"templates/" + a["template"] + "/index.css"}">`
     }
 }
 };
 // 开始请求
-xhr.open('GET', '/VariStyler/config.json', true);
+xhr.open('GET', `${vari_main_folder}/config.json`, true);
 xhr.send(null);
