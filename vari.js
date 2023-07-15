@@ -2,11 +2,11 @@
 var vari_main_folder = "/VariStyler";
 
 // 判断是否有定义
-if (document.getElementById("vari-main-folder")){
+if (document.getElementById("vari_main_folder")){
     // 设置文件夹为定义的路径
-    vari_main_folder = document.getElementById("vari-main-folder").innerText;
+    vari_main_folder = document.getElementById("vari_main_folder").innerText;
     // 删除定义标签
-    document.getElementById("vari-main-folder").remove();
+    document.getElementById("vari_main_folder").remove();
 }
 
 // 添加主要库
