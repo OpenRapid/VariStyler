@@ -183,7 +183,7 @@ body {
     margin: 3px;
 }
 
-.vari-menu.vari-primary *,.vari-menu .vari-button.vari-link {
+.vari-menu.vari-primary *,.vari-menu.vari-primary .vari-button.vari-link {
     color: #ffffff !important;
 }
 
