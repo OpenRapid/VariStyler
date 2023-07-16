@@ -1,5 +1,7 @@
 // 定义Vari文件夹位置 如果没有定义默认使用此路径
-var vari_main_folder = "/VariStyler";
+if (typeof(vari_main_folder) === "undefined"){
+    var vari_main_folder = "/VariStyler";
+}
 
 // 判断是否有定义
 if (document.getElementById("vari_main_folder")){
