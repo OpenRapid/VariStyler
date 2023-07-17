@@ -1,0 +1,6 @@
+{
+    "name": "VariPro",
+    "author": "OpenRapid",
+    "introduction": "Vari的升级版，强化了自定义功能",
+    "script": "script.js"
+}
