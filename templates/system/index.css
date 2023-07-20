@@ -187,6 +187,22 @@ body {
     color: #ffffff !important;
 }
 
+input.vari-input {
+    outline: 0;
+    padding: 6px;
+    border-radius: 5px;
+    border: solid 0.3px #c4c4c4;
+    transition: all 0.25s;
+}
+
+input.vari-input:hover {
+    border: solid 0.3px var(--theme-background-color-hover);
+}
+
+input.vari-input:focus {
+    border: solid 1.5px var(--theme-background-color);
+}
+
 @media screen and (max-width: 600px) {
     .vari-content {
         width: calc(100% - 40px);
