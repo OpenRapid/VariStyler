@@ -2,6 +2,7 @@ function get_theme_setting(theme, setting) {
     return vari_theme_setting[`${theme + "_" + setting}`]
 }
 
+
 let vari_theme_setting = {};
 
 // 定义Vari文件夹位置 如果没有定义默认使用此路径
